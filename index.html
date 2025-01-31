@@ -124,7 +124,7 @@
 
     <!-- ######### Services Section ######## -->
 
-    <section class="max-w-[390px] md:max-w-[1320px] mx-auto mb-24h md:mb-32">
+    <section class="max-w-[390px] md:max-w-[1320px] mx-auto mb-10 md:mb-32">
       <h2 class="text-2xl md:text-4xl text-green-600 font-semibold">
         services
       </h2>
@@ -177,31 +177,31 @@
       </div>
     </section>
 
-    <!-- ####### Popular Products ########### -->
-    <section class="w-full bg-primary">
-      <h1 class="text-2xl pt-32 mb-5 md:text-4xl text-green-600 font-semibold">
-        Popular Products
-      </h1>
+    <!-- ######################## Popular Products ################### ########### -->
+    <section class="w-full h-auto md:h-[780px] bg-primary mb-6">
+      <div class="max-w-[390px] md:max-w-[1320px] mx-auto pt-20 md:pt-32 mb-4">
+        <h1 class="text-2xl md:text-4xl text-green-600 font-semibold">
+          Popular Products
+        </h1>
+      </div>
 
-      <!-- #### pop products container #### -->
-      <div class="md:max-w-[1320px] mx-auto h-[500px]">
-        <!-- Discount -->
-        
-          <div
-            class="relative w-[425px] h-[410px] rounded-md items-center bg-gradient-to-br from-[#49be45] via-[#52db3a] to-[#FFFFFF] flex flex-col pt-12 pl-9">
+      <!-- ############ POPULAR PRODUCTS Container ################## -->
+      <div class="max-w-[390px] md:max-w-[1320px] mx-auto flex flex-col md:flex-row md:justify-between gap-y-4">
+
+        <!--###### Discount #####-->
+          <div class="relative w-full md:w-[425px] h-[342px] md:h-[400px] rounded-md items-center bg-gradient-to-br from-[#49be45] via-[#52db3a] to-[#FFFFFF] flex flex-col pt-12 pl-9">
             <div class="space-y-3">
               <h2 class="text-white text-xl font-bold">30% off</h2>
-              <p class="mb-4">
+              <p class="mb-4 text-xs md:text-base">
                 Uncover incredible discounts on fresh groceries, tasty treats,
-                <br />
+                <br/>
                 and everyday essentials..
               </p>
               <button
-                class="bg-white text-sm font-semibold py-2 px-4 rounded-md">
+                class="bg-white text-sm font-light py-2 px-4 rounded-md">
                 Buy Now
               </button>
             </div>
-
 
             <div class="absolute bottom-0 right-0 ">
               <img src="./c2-assets/vegetable-offer.png" alt="" />
@@ -210,12 +210,123 @@
 
 
     
-        <!-- for grid -->
-        <div>
+        <!--######## Onion, tomato, potato card for grid ######-->
+        <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-10 md:h-[400px] max-w-[872px]">
           <!-- card 1 -->
-          <div></div>
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/onion.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Onion 1 KG</h2>
+              <span class="text-sm">$39.99</span>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white  gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/tomato.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Tomato 500 g</h2>
+              <span class="text-xs md:text-base">$40.99</span>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white  gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/potato.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Potato 1kg</h2>
+              <span class="text-xs md:text-base">$31.99</span>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white  gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/tomato.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Tomato 400 gm</h2>
+              <span class="text-xs md:text-base">$34.99</span>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white  gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/onion.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Onion 2 KG</h2>
+              <span class="text-xs md:text-base">$79.99</span>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white  gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/tomato.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Tomato 20 gm</h2>
+              <span class="text-xs md:text-base">$24.99</span>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/onion.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Onion 7 KG</h2>
+              <span class="text-xs md:text-base">$94.99</span>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="pl-2 py-2 md:py-4 md:pl-4 md:pr-9 flex bg-white  gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/potato.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Onion 10 kg</h2>
+              <span class="text-xs md:text-base">$99.99</span>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div class="hidden pl-2 py-2 md:py-4 md:pl-4 md:pr-9 md:flex bg-white gap-2 rounded-md">
+            <div>
+              <img class="bg-primary rounded-md" src="./c2-assets/potato.png" alt="">
+            </div>
+            <div>
+              <i class="fa-solid fa-star text-orange-500"></i>
+              <span>4.5</span>
+              <h2 class="font-semibold text-xs md:text-base">Onion 100 g</h2>
+              <span class="text-xs md:text-base">$14.99</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
   </body>
 </html>
+
