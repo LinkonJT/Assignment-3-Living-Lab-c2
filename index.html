@@ -1,156 +1,221 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Living Lab -C2</title>
     <!-- daisyUI setup -->
-     
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
 
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet" />
 
-<!-- Font Awesome kit -->
-<script src="https://kit.fontawesome.com/c05f8c2398.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
 
+    <!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/c05f8c2398.js"
+      crossorigin="anonymous"></script>
 
+    <style>
+      .sora-font {
+        font-family: "Sora", serif;
+      }
 
-<style>
+      .poppins-font {
+        font-family: "Poppins", serif;
+      }
 
-.sora-font {
-  font-family: "Sora", serif;
-}
+      .bg-primary {
+        background-color: #efebe3;
+      }
+    </style>
+  </head>
 
-.poppins-font {
-  font-family: "Poppins", serif;
-}
+  <body class="sora-font">
+    <header
+      class="mx-auto mb-20 md:mb-36 bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] overflow-hidden">
+      <!-- #### navbar section ####  -->
+      <nav
+        class="max-w-[1320px] mx-auto navbar overflow-hidden bg-base-100 flex justify-between border border-1 border-green-600 sm:border-none mb-16 md:mb-24">
+        <!-- desktop manu icon -->
+        <div class="hidden md:inline-block">
+          <a class="btn btn-ghost text-xl"
+            ><img class="w-36 h-14" src="./c2-assets/logo-header.png" alt=""
+          /></a>
+        </div>
+        <!-- middle anchors -->
+        <div
+          class="hidden md:inline-flex gap-9 justify-between text-xl mx-auto">
+          <a href="">Product</a>
+          <a href="">Services</a>
+          <a href="">Contact Us</a>
+        </div>
+        <!-- right side buttons -->
+        <div class="hidden md:inline-flex justify-end gap-4">
+          <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <button
+            class="btn w-28 border border-1 text-lg font-light border-green-700">
+            Login
+          </button>
+          <button class="btn w-36 text-white bg-green-700 text-lg font-light">
+            Register
+          </button>
+        </div>
 
-.bg-primary{
-  background-color: #EFEBE3;
-}
+        <!-- mobile brand icon -->
+        <div class="md:hidden lg:hidden">
+          <a class="btn btn-ghost text-xl"
+            ><img class="w-11 h-9" src="./c2-assets/mobile-leaf.png" alt=""
+          /></a>
+        </div>
 
-</style>
+        <!-- hamburger menu for mobile -->
+        <div class="md:hidden lg:hidden">
+          <button class="btn btn-square btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current text-green-700">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
 
+      <!-- ##### Banner part ##### -->
 
-
-</head>
-
-<body class="sora-font">
-   
-
-    <header class="mx-auto mb-24 md:mb-36 bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] overflow-hidden">
-
-        <!-- #### navbar section ####  -->
-        <nav class="max-w-[1320px] mx-auto navbar overflow-hidden bg-base-100 flex justify-between border border-1 border-green-600 sm:border-none mb-16 md:mb-24">
-                    <!-- desktop manu icon -->
-                    <div class="hidden md:inline-block">
-                    <a class="btn btn-ghost text-xl"><img class="w-36 h-14" src="./c2-assets/logo-header.png" alt=""></a>
-                    </div>
-                    <!-- middle anchors -->
-                    <div class="hidden md:inline-flex gap-9 justify-between text-xl mx-auto">
-                            <a href="">Product</a>
-                            <a href="">Services</a>
-                            <a href="">Contact Us</a>
-                    </div>
-                    <!-- right side buttons -->
-                        <div class="hidden md:inline-flex justify-end gap-4 ">
-                            <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
-                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                            <button class="btn w-28 border border-1 text-lg font-light border-green-700">Login</button>
-                            <button class="btn w-36 text-white bg-green-700 text-lg font-light">Register</button>
-                        </div>
-
-                    <!-- mobile brand icon -->
-                     <div class="md:hidden lg:hidden ">
-                    <a class="btn btn-ghost text-xl "><img class="w-11 h-9" src="./c2-assets/mobile-leaf.png" alt=""></a>
-                  </div>
-
-                  <!-- hamburger menu for mobile -->
-              <div class="md:hidden lg:hidden">
-                <button class="btn btn-square btn-ghost">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      class="inline-block h-5 w-5 stroke-current text-green-700">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                  </button>
-              </div>
-        </nav>
-
-
-       <!-- ##### Banner part ##### -->
-
-       <div class="text-center mx-auto max-w-[400px] md:max-w-[827px]">
-            <h1 class="font-semibold text-3xl md:text-6xl" >Freshness <span class="text-green-600">You Can
-              Count On</span>, Prices You’ll Love!</h1><br>
-              <p class="font-light text-lg text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-       </div><br>
-
-       <div>
-        <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
-       </div>
-
-</header>
-
-        <!-- ######### Services Section ######## -->
-
-<section class="max-w-[390px] md:max-w-[1320px] mx-auto">
-  
-
-    <h2 class="text-2xl md:text-4xl text-green-600 font-semibold ">services</h2><br>
-
-    <!-- ###### service container ##### -->
-    <div class="grid grid-cols-1 md:grid-cols-3 md:flex-row gap-y-4 md:gap-5">
-        <!-- service card-1 -->
-      <div class="space-y-2 py-10 px-8 bg-primary text-center rounded-md ">
-        
-          <img class="bg-gray-100 rounded-full p-4 mx-auto" src="./c2-assets/service.png" alt="">
-        
-          <h3 class="font-semibold text-lg">24/7 Services</h3>
-          <p class="font-light text-xs md:text-sm text-gray-500">We provide assistance to customers at all times, regardless of the time zone.</p>
+      <div class="text-center mx-auto max-w-[400px] md:max-w-[827px]">
+        <h1 class="font-semibold text-3xl md:text-6xl">
+          Freshness <span class="text-green-600">You Can Count On</span>, Prices
+          You’ll Love!
+        </h1>
+        <br />
+        <p class="font-light text-lg text-[#111111]">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
       </div>
+      <br />
 
+      <div>
+        <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="" />
+      </div>
+    </header>
 
-      <!-- card 2 -->
-      <div class="space-y-2 py-10 px-8 bg-primary text-center rounded-md">
+    <!-- ######### Services Section ######## -->
+
+    <section class="max-w-[390px] md:max-w-[1320px] mx-auto mb-24h md:mb-32">
+      <h2 class="text-2xl md:text-4xl text-green-600 font-semibold">
+        services
+      </h2>
+      <br />
+
+      <!-- ###### service container ##### -->
+      <div class="grid grid-cols-1 md:grid-cols-3 md:flex-row gap-y-4 md:gap-5">
+        <!-- service card-1 -->
+        <div class="space-y-2 py-10 px-8 bg-primary text-center rounded-md">
+          <img
+            class="bg-gray-100 rounded-full p-4 mx-auto"
+            src="./c2-assets/service.png"
+            alt="" />
+
+          <h3 class="font-semibold text-lg">24/7 Services</h3>
+          <p class="font-light text-xs md:text-sm text-gray-500">
+            We provide assistance to customers at all times, regardless of the
+            time zone.
+          </p>
+        </div>
+
+        <!-- card 2 -->
+        <div class="space-y-2 py-10 px-8 bg-primary text-center rounded-md">
+          <img
+            class="bg-gray-100 rounded-full p-4 mx-auto"
+            src="./c2-assets/delivery.png"
+            alt="" />
+
+          <h3 class="font-semibold text-lg">Fast Delivery</h3>
+          <p class="font-light text-xs md:text-sm text-gray-500">
+            Get your order delivered quickly and conveniently with our reliable
+            and secure fast delivery system.
+          </p>
+        </div>
+
+        <!-- card 3 -->
+
+        <div class="space-y-2 py-10 px-8 bg-primary text-center rounded-md">
+          <img
+            class="bg-gray-100 rounded-full p-4 mx-auto"
+            src="./c2-assets/healthy.png"
+            alt="" />
+
+          <h3 class="font-semibold text-lg">Healthy Products</h3>
+          <p class="font-light text-xs md:text-sm text-gray-500">
+            Committed to quality and your well-being, we offer a range of
+            healthy options for a happier you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ####### Popular Products ########### -->
+    <section class="w-full bg-primary">
+      <h1 class="text-2xl pt-32 mb-5 md:text-4xl text-green-600 font-semibold">
+        Popular Products
+      </h1>
+
+      <!-- #### pop products container #### -->
+      <div class="md:max-w-[1320px] mx-auto h-[500px]">
+        <!-- Discount -->
         
-        <img class="bg-gray-100 rounded-full p-4 mx-auto" src="./c2-assets/delivery.png" alt="">
-      
-        <h3 class="font-semibold text-lg">Fast Delivery</h3>
-        <p class="font-light text-xs md:text-sm text-gray-500">Get your order delivered quickly and conveniently with our reliable and secure fast delivery system.</p>
-    </div>
+          <div
+            class="relative w-[425px] h-[410px] rounded-md items-center bg-gradient-to-br from-[#49be45] via-[#52db3a] to-[#FFFFFF] flex flex-col pt-12 pl-9">
+            <div class="space-y-3">
+              <h2 class="text-white text-xl font-bold">30% off</h2>
+              <p class="mb-4">
+                Uncover incredible discounts on fresh groceries, tasty treats,
+                <br />
+                and everyday essentials..
+              </p>
+              <button
+                class="bg-white text-sm font-semibold py-2 px-4 rounded-md">
+                Buy Now
+              </button>
+            </div>
 
 
-      <!-- card 3 -->
-
-      <div class="space-y-2 py-10 px-8 bg-primary text-center rounded-md">
-        
-        <img class="bg-gray-100 rounded-full p-4 mx-auto" src="./c2-assets/healthy.png" alt="">
-      
-        <h3 class="font-semibold text-lg">Healthy Products</h3>
-        <p class="font-light text-xs md:text-sm text-gray-500">Committed to quality and your well-being, we offer a range of healthy options for a happier you.</p>
-    </div>
-      
-
-    </div>
+            <div class="absolute bottom-0 right-0 ">
+              <img src="./c2-assets/vegetable-offer.png" alt="" />
+            </div>
+          </div>
 
 
-</section>
-
-</body>
+    
+        <!-- for grid -->
+        <div>
+          <!-- card 1 -->
+          <div></div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
-
